@@ -73,4 +73,33 @@ body {
       border: 2px solid #FFFFFF54;
       margin-top: 1.8em; }
 
+.dates {
+  background: #222222;
+  color: #ffffff;
+  font-family: 'Roboto';
+  padding-bottom: 2em; }
+  .dates__text {
+    margin-top: 0;
+    padding-top: 2em;
+    padding-left: 1.5em; }
+  .dates__selector {
+    margin-left: 1.5em;
+    background: none;
+    color: gray;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-right: 2em; }
+    .dates__selector--mod {
+      margin-bottom: 3em; }
+  .dates__button {
+    background: #BEAD8E;
+    color: #ffffff;
+    font-family: 'Archivo';
+    letter-spacing: 0.3em;
+    padding: 1.5em;
+    margin-left: 1.5em;
+    border: none;
+    cursor: pointer; }
+
 /*# sourceMappingURL=styles.css.map */
