@@ -1,0 +1,149 @@
+.aboutUs {
+    margin-top: 4em;
+    &__description {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.4em;
+        background: #F9F9F9;
+        &__title {
+            padding-left: 1.2em;
+            padding-bottom: 1em;
+            letter-spacing: 0.1em;
+            font-size: 0.8em;
+            font-weight: 700;
+            font-family: 'Archivo';
+            color: #777777;
+        }
+        &__mainTitle {
+            font-family: 'Old Standard TT';
+            font-size: 3.5em;
+            font-weight: 100;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0.3em;
+        }
+        &__text {
+            font-family: 'Archivo';
+            color: #777777;
+            font-weight: 300;
+            padding-left: 1.2em;
+            padding-bottom: 1.5em;
+            width: 81%;
+            line-height: 1.5em;
+        }
+        &__button {
+            background: #BEAD8E;
+            color: #ffffff;
+            font-family: 'Archivo';
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            padding: 1.5em;
+            margin-bottom: 4em;
+            margin-left: 1.5em;
+            border: none;
+            cursor: pointer;
+            width: 60%;
+        }
+        &__img {
+            width: 72%;
+            height: 18em;
+            align-self: center;
+        }
+    }
+    &__team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3em;
+        &__title {
+            font-family: 'Old Standard TT';
+            font-weight: 500;
+            font-size: 1.6em;
+            padding-bottom: 0.5em;
+            padding-top: 1em;
+            margin: 0;
+            position: relative;
+        }
+        &__text {
+            font-family: 'Roboto';
+            font-size: 0.8em;
+            width: 50%;
+            text-align: center;
+            margin-top: 0;
+            padding-bottom: 8em;
+        }
+        &__icon {
+            position: absolute;
+            right: 3em;
+        }
+        &__icon2 {
+            position: relative;
+        }
+        &__img {
+            width: 72%;
+            height: 18em;
+            align-self: center;
+        }
+        &__room {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 72%;
+            background:#222222;
+            &__icon {
+                padding-top: 3em;
+            }
+            &__title {
+                font-family: 'Old Standard TT';
+                color: #ffffff;
+                font-size: 1.5em;
+                margin-bottom: 0;
+            }
+            &__text {
+                font-family: 'Roboto';
+                text-align: center;
+                color: #ffffff;
+                font-size: 0.8em;
+                font-weight: 100;
+                padding-bottom: 3em;
+            }
+        }
+    }
+    &__rooms {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3em;
+        &__title {
+            font-family: 'Archivo';
+            color: #777777;
+            font-size: 1em;
+            letter-spacing: 0.2em;
+        }
+        &__mainTitle {
+            font-family: 'Old Standard TT';
+            font-weight: 100;
+            margin-top: 0;
+            font-size: 3em;
+            text-align: center;
+        }
+        &__slider {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &__icons {
+                display: flex;
+                gap: 1em;
+                background: #ffffff;
+                padding-bottom: 0.5em;
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+                transform: translateY(15px);
+            }
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+}
