@@ -308,4 +308,69 @@ body {
     cursor: pointer;
     width: 60%; }
 
+.features {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .features__title {
+    font-family: 'Archivo';
+    font-weight: 600;
+    color: #777777;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    padding-top: 2.5em; }
+  .features__mainTitle {
+    font-family: 'Old Standard TT';
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3em;
+    text-align: center; }
+  .features__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .features__container__icon {
+      padding-left: 2em;
+      align-self: end; }
+    .features__container__featureNumber {
+      font-family: 'Archivo';
+      font-weight: 700;
+      color: #2222220A;
+      font-size: 10em;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-right: 0.1em; }
+  .features__subTitle {
+    font-family: 'Old Standard TT';
+    font-size: 1.8em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0;
+    align-self: flex-start; }
+  .features__description {
+    font-family: 'Archivo';
+    font-size: 0.8em;
+    color: #777777;
+    text-align: left;
+    padding-left: 2.4em;
+    padding-right: 6em;
+    padding-bottom: 1em;
+    line-height: 2em;
+    margin-top: 0; }
+  .features__buttonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 100%; }
+    .features__buttonsContainer__dot {
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      background: #EDEDED;
+      border: none;
+      cursor: pointer; }
+
 /*# sourceMappingURL=styles.css.map */
