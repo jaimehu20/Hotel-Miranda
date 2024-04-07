@@ -1,0 +1,28 @@
+.achievements {
+    display: grid;
+    justify-content: center;
+    background: #222222;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4em;
+        &__text {
+            font-family: 'Roboto';
+            color: #ffffff;
+            font-size: 4.3em;
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0.2em;
+        }
+        &__subText {
+            font-family: 'Roboto';
+            font-weight: 500;
+            color: gray;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 2em;
+        }
+    }
+}
