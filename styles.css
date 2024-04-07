@@ -263,4 +263,49 @@ body {
         font-weight: 600;
         margin-top: 0; }
 
+.introVideo {
+  display: flex;
+  flex-direction: column;
+  background: #222222; }
+  .introVideo__title {
+    font-family: 'Archivo';
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding-left: 1.8em;
+    padding-top: 3.3em;
+    padding-bottom: 0.6em;
+    color: #BDAC8D; }
+  .introVideo__mainTitle {
+    font-family: 'Old Standard TT';
+    font-size: 3em;
+    padding-left: 0.5em;
+    color: #ffffff;
+    width: 66%;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .introVideo__description {
+    font-family: 'Archivo';
+    color: #C2C2C2;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    padding-left: 1.5em;
+    padding-right: 4em;
+    padding-bottom: 2em; }
+  .introVideo__video {
+    width: 90%;
+    align-self: center;
+    padding-bottom: 2em; }
+  .introVideo__button {
+    background: #BEAD8E;
+    color: #ffffff;
+    font-family: 'Archivo';
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    padding: 1.5em;
+    margin-bottom: 4em;
+    margin-left: 1.5em;
+    border: none;
+    cursor: pointer;
+    width: 60%; }
+
 /*# sourceMappingURL=styles.css.map */
