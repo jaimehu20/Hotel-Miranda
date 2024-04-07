@@ -468,4 +468,96 @@ body {
       margin-bottom: 0;
       padding-bottom: 2em; }
 
+.footer {
+  display: flex;
+  flex-direction: column; }
+  .footer__head {
+    display: flex;
+    align-items: center; }
+    .footer__head__logo {
+      color: #ffffff;
+      background: #BEAD8E;
+      font-family: 'Archivo';
+      text-align: center;
+      width: 10%;
+      padding-top: 0.6em;
+      padding-bottom: 0.6em;
+      margin-left: 1.6em;
+      padding-left: 0.6em;
+      padding-right: 0.6em;
+      font-size: 2em;
+      font-weight: 500; }
+    .footer__head__text {
+      padding-left: 2em;
+      font-family: 'Archivo'; }
+      .footer__head__text__hotel {
+        margin-bottom: 0;
+        font-weight: 800;
+        letter-spacing: 0.2em; }
+      .footer__head__text__miranda {
+        margin-top: 0;
+        letter-spacing: 0.2em; }
+  .footer__text {
+    font-family: 'Archivo';
+    color: #777777;
+    font-weight: 300;
+    font-size: 0.8em;
+    padding-left: 2em;
+    line-height: 1.7em;
+    width: 76%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 2.5em; }
+  .footer__icons {
+    display: flex;
+    gap: 1em;
+    padding-left: 1.8em; }
+  .footer__services {
+    font-family: 'Old Standard TT';
+    font-size: 1.5em;
+    padding-left: 1em;
+    padding-top: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0.8em; }
+  .footer__serviceList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'Roboto';
+    font-size: 0.8em;
+    color: #777777;
+    padding-left: 1em; }
+  .footer__contact {
+    font-family: 'Old Standard TT';
+    font-size: 1.5em;
+    padding-left: 1em;
+    padding-top: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0.8em; }
+  .footer__contactData {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    padding-bottom: 1.5em; }
+    .footer__contactData__phone {
+      display: flex;
+      gap: 2em;
+      align-items: center; }
+      .footer__contactData__phone__text {
+        font-family: 'Old Standard TT';
+        font-size: 1.2em;
+        margin-bottom: 0; }
+      .footer__contactData__phone__data {
+        font-family: 'Roboto';
+        font-size: 0.8em;
+        margin-top: 0;
+        color: #777777; }
+  .footer__copyright {
+    background: #F8F8F8;
+    padding-left: 1em;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 0.8em; }
+
 /*# sourceMappingURL=styles.css.map */
