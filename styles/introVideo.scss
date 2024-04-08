@@ -1,8 +1,6 @@
 .introVideo {
-    display: flex;
-    flex-direction: column;
     background: #222222;
-    &__title {
+    p:nth-child(1) {
         font-family: 'Archivo';
         font-weight: 500;
         letter-spacing: 0.1em;
@@ -11,7 +9,7 @@
         padding-bottom: 0.6em;
         color: #BDAC8D;
     }
-    &__mainTitle {
+    p:nth-child(2) {
         font-family: 'Old Standard TT';
         font-size: 3em;
         padding-left: 0.5em;
@@ -20,7 +18,7 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-    &__description {
+    p:nth-child(3) {
         font-family: 'Archivo';
         color: #C2C2C2;
         font-size: 0.8em;
@@ -29,22 +27,10 @@
         padding-right: 4em;
         padding-bottom: 2em;
     }
-    &__video {
+    iframe {
+        display: block;
         width: 90%;
-        align-self: center;
         padding-bottom: 2em;
-    }
-    &__button {
-        background: #BEAD8E;
-        color: #ffffff;
-        font-family: 'Archivo';
-        font-weight: 700;
-        letter-spacing: 0.3em;
-        padding: 1.5em;
-        margin-bottom: 4em;
-        margin-left: 1.5em;
-        border: none;
-        cursor: pointer;
-        width: 60%;
+        margin: 0 auto;
     }
 }
