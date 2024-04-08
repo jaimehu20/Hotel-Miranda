@@ -2,6 +2,12 @@
     background: #333333;
     color: #ffffff;
     padding-bottom: 4em;
+    &--mod {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+        margin-bottom: 4em;
+    }
     &__title {
         margin: 0;
         padding-top: 3em;
@@ -17,6 +23,39 @@
             padding-left: 0.3em;
             padding-bottom: 0.7em;
             width: 6em;
+        }
+        &--mod2 {
+            padding-top: 0.2em;
+        }
+        &--smaller {
+            font-weight: 500;
+            width: 100%;
+            letter-spacing: 0.1em;
+            padding-top: 4em;
+        }
+    }
+    &__options {
+        align-self: flex-end;
+        background: white;
+        width: 7em;
+        margin-right: 1em;
+        font-family: 'Archivo';
+        font-weight: 600;
+        padding-left: 1.6em;
+        padding-right: 1.2em;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+        text-align: center;
+        p:first-child {
+            display: inline;
+            color: black;
+            cursor: pointer;
+        }
+        p:last-child {
+            display: inline;
+            padding-left: 0.1em;
+            color: #BEAD8E;
+            cursor: pointer;
         }
     }
     &__button {

@@ -1,6 +1,10 @@
 .features {
     padding-bottom: 6em;
     text-align: center;
+    &--dark {
+        background: #222222;
+        padding-bottom: 3em;
+    }
     &__title {
         font-family: 'Archivo';
         font-weight: 600;
@@ -8,6 +12,9 @@
         font-size: 1em;
         letter-spacing: 0.2em;
         padding-top: 2.5em;
+        &--dark {
+            color: #ffffff;
+        }
     }
     &__mainTitle {
         font-family: 'Old Standard TT';
@@ -16,24 +23,35 @@
         margin-bottom: 0;
         font-size: 3em;
         text-align: center;
+        &--dark {
+            color: #ffffff;
+        }
     }
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &--dark {
+            background: #292929;
+            margin-top: 2em;
+        }
         svg {
             padding-left: 2em;
             align-self: end ;
         }
-        h1 {
+        &__number {
             font-family: 'Archivo';
             font-weight: 700;
-            color: #2222220A;
             font-size: 10em;
             margin-top: 0;
             margin-bottom: 0;
             padding-right: 0.1em;
-
+            &--light {
+                color: #2222220A;
+            }
+            &--dark {
+                color: #222222;
+            }
         }
     }
     &__subTitle {
@@ -44,19 +62,33 @@
         padding-left: 1.2em;
         margin-bottom: 0;
         text-align: left;
+        &--mod {
+            margin-top: 0;
+            background: #292929;
+            color: #ffffff;
+        }
     }
     &__description {
         font-family: 'Archivo';
-        font-size: 0.8em;
+        font-size: 0.875em;
         color: #777777;
         text-align: left;
         line-height: 2em;
         width: 62%;
         padding-left: 2.8em;
+        &--mod {
+            background: #292929;
+            color: #ffffff;
+            padding-bottom: 4em;
+            padding-right: 9em;
+            margin-top: 0;
+            
+        }
     }
     &__buttonsContainer {
         width: 100%;
         padding-top: 1.5em;
+        text-align: center;
         button {
             width: 1em;
             height: 1em;
