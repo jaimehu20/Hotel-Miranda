@@ -1,10 +1,8 @@
 .footer {
-    display: flex;
-    flex-direction: column;
     &__head {
-        display: flex;
-        align-items: center;
+        padding-top: 3em;
         &__logo {
+            display: inline-block;
             color: #ffffff;
             background: #BEAD8E;
             font-family: 'Archivo';
@@ -12,15 +10,17 @@
             width: 10%;
             padding-top: 0.6em;
             padding-bottom: 0.6em;
-            margin-left: 1.6em;
+            margin-left: 0.8em;
             padding-left: 0.6em;
             padding-right: 0.6em;
             font-size: 2em;
             font-weight: 500;
         }
         &__text {
-            padding-left: 2em;
+            display: inline-block;
+            padding-left: 1.5em;
             font-family: 'Archivo';
+            font-size: 1.4em;
             &__hotel {
                 margin-bottom: 0;
                 font-weight: 800;
@@ -45,9 +45,10 @@
         padding-bottom: 2.5em;
     }
     &__icons {
-        display: flex;
-        gap: 1em;
         padding-left: 1.8em;
+        &__single {
+            padding-right: 0.5em;
+        }
     }
     &__services {
         font-family: 'Old Standard TT';
@@ -76,20 +77,21 @@
         padding-bottom: 0.8em;
     }
     &__contactData {
-        display: flex;
-        flex-direction: column;
         padding-left: 1em;
         padding-bottom: 1.5em;
-        &__phone {
-            display: flex;
-            gap: 2em;
-            align-items: center;
-            &__text {
+        div {
+            svg {
+                padding-right: 1em;
+            }
+            &:nth-child(2) {
+                display: inline-block;
+            }
+            &:nth-child(2) p:first-child {
                 font-family: 'Old Standard TT';
                 font-size: 1.2em;
                 margin-bottom: 0;
             }
-            &__data {
+            &:nth-child(2) p:last-child {
                 font-family: 'Roboto';
                 font-size: 0.8em;
                 margin-top: 0;
