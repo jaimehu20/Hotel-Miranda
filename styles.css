@@ -11,7 +11,7 @@ body {
   display: flex;
   gap: 2em;
   box-shadow: 0px 3px 6px 0px #0000004A; }
-  .navBar__burguer {
+  .navBar svg {
     width: 2em;
     padding-left: 1em;
     cursor: pointer; }
@@ -19,15 +19,15 @@ body {
     display: flex;
     gap: 1em;
     align-items: center; }
-    .navBar__logo__letter {
+    .navBar__logo div:first-child {
       font-weight: bold;
       font-family: 'Archivo'; }
-    .navBar__logo__text {
+    .navBar__logo div:last-child p {
       line-height: 0;
       font-size: 0.8em;
       font-family: 'Archivo'; }
-      .navBar__logo__text--mod {
-        font-weight: bold; }
+    .navBar__logo div:last-child p:last-child {
+      font-weight: bold; }
     .navBar__logo__icons {
       display: flex;
       align-items: center;
