@@ -111,7 +111,7 @@ body {
     flex-direction: column;
     padding-top: 1.4em;
     background: #F9F9F9; }
-    .aboutUs__description p:first-of-type {
+    .aboutUs__description__title {
       padding-left: 1.2em;
       padding-bottom: 1em;
       letter-spacing: 0.1em;
@@ -291,10 +291,8 @@ body {
     margin: 0 auto; }
 
 .features {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 6em; }
+  padding-bottom: 6em;
+  text-align: center; }
   .features__title {
     font-family: 'Archivo';
     font-weight: 600;
@@ -313,10 +311,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .features__container__icon {
+    .features__container svg {
       padding-left: 2em;
       align-self: end; }
-    .features__container__featureNumber {
+    .features__container h1 {
       font-family: 'Archivo';
       font-weight: 700;
       color: #2222220A;
@@ -327,39 +325,35 @@ body {
   .features__subTitle {
     font-family: 'Old Standard TT';
     font-size: 1.8em;
-    padding-left: 1em;
     padding-top: 1em;
     padding-bottom: 0.5em;
+    padding-left: 1.2em;
     margin-bottom: 0;
-    align-self: flex-start; }
+    text-align: left; }
   .features__description {
     font-family: 'Archivo';
     font-size: 0.8em;
     color: #777777;
     text-align: left;
-    padding-left: 2.4em;
-    padding-right: 6em;
-    padding-bottom: 1em;
     line-height: 2em;
-    margin-top: 0; }
+    width: 62%;
+    padding-left: 2.8em; }
   .features__buttonsContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    width: 100%; }
-    .features__buttonsContainer__dot {
+    width: 100%;
+    padding-top: 1.5em; }
+    .features__buttonsContainer button {
       width: 1em;
       height: 1em;
       border-radius: 50%;
       background: #EDEDED;
       border: none;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-right: 0.6em; }
 
 .menu {
   display: flex;
   flex-direction: column; }
-  .menu__icon {
+  .menu svg {
     align-self: flex-end; }
   .menu__title {
     font-family: 'Archivo';
@@ -379,20 +373,20 @@ body {
   .menu__table {
     display: grid;
     grid-template-columns: auto auto; }
-    .menu__table__item__container {
+    .menu__table div {
       padding-right: 2em;
       padding-bottom: 1em; }
-      .menu__table__item__container__img {
+      .menu__table div img {
         width: 8em;
         height: 8em;
         padding-left: 1em; }
-      .menu__table__item__container__title {
+      .menu__table div p:nth-child(1) {
         font-family: 'Old Standard TT';
         font-size: 1.5em;
         margin-top: 0;
         margin-bottom: 0;
         padding-top: 0.4em; }
-      .menu__table__item__container__description {
+      .menu__table div p:nth-child(2) {
         font-family: 'Roboto';
         font-size: 0.8em; }
   .menu__controls {
@@ -402,11 +396,9 @@ body {
     padding-right: 1em;
     padding-bottom: 4em; }
   .menu__slider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     padding-bottom: 2em; }
-    .menu__slider__img {
+    .menu__slider img {
       width: 90%;
       height: 21em;
       padding-bottom: 2em; }
@@ -417,7 +409,7 @@ body {
       gap: 1em;
       width: 100%;
       padding-bottom: 2em; }
-      .menu__slider__controls__dot {
+      .menu__slider__controls div {
         width: 1em;
         height: 1em;
         border-radius: 50%;
