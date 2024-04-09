@@ -18,6 +18,10 @@
             width: auto;
             padding-left: 0;
         }
+        &--paddingAdd {
+            padding-left: 0.4em;
+            align-self: flex-start;
+        }
     }
     svg {
         width: 5em;

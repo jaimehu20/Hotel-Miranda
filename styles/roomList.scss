@@ -11,11 +11,18 @@
             color: #BDBDBD;
             padding-left: 0.6em;
         }
-    }
-    img {
-        width: 21em;
-        height: 15em;
-        display: block;
+        img {
+            width: 21em;
+            height: 15em;
+            display: block;
+        }
+        &--mod {
+            padding-top: 0;
+            padding-bottom: 0.8em;
+            margin-left: 1em;
+            margin-right: 1em;
+            background: #ffffff;
+        }
     }
     &__icons {
         background: #ffffff;

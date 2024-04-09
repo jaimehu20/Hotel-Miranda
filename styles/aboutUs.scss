@@ -22,6 +22,9 @@
             &--mod2 {
                 padding-left: 0;
             }
+            &--mod3 {
+                padding-left: 1.5em;
+            }
         }
         h1 {
             font-family: 'Old Standard TT';
@@ -211,7 +214,15 @@
                     padding-top: 1em;
                     width: 84%;
                     font-size: 1em;
-
+                }
+                &--justify {
+                    text-align: left;
+                    font-size: 0.875em;
+                    line-height: 1.5em;
+                    margin-left: 0;
+                    padding-left: 1.5em;
+                    padding-top: 1em;
+                    width: 86%;
                 }
             }
             &__price {
