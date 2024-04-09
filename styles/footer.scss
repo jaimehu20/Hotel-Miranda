@@ -101,6 +101,14 @@
                 color: #777777;
             }
         }
+        &--mod {
+            display: flex;
+            flex-direction: column;
+            gap: 7em;
+            svg {
+                padding-right: 3em;
+            }
+        }
     }
     &__copyright {
         background: #F8F8F8;
