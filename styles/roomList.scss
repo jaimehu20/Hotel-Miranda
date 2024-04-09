@@ -1,0 +1,42 @@
+.roomList {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2em;
+        p:nth-child(2) {
+            display: inline-block;
+            font-family: 'Roboto';
+            font-weight: 700;
+            color: #BDBDBD;
+            padding-left: 0.6em;
+        }
+    }
+    img {
+        width: 21em;
+        height: 15em;
+        display: block;
+    }
+    &__icons {
+        background: #ffffff;
+        padding-bottom: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 0.8em;
+        transform: translateY(-14px);
+        svg {
+            padding-right: 0.3em;
+        }
+    }
+    &__pagination {
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Oswald';
+        font-size: 0.875em;
+        font-weight: 700;
+        color: #222222;
+        p {
+            cursor: pointer;
+        }
+    }
+}

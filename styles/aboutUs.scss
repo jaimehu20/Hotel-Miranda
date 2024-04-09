@@ -168,27 +168,39 @@
             text-align: center;
             transform: translateY(-80px);
             margin: 0 auto;
-            p:nth-child(1) {
+            &__title {
                 font-family: 'Old Standard TT';
                 font-size: 1.5em;
                 margin-bottom: 0;
                 padding-top: 0.8em;
                 padding-bottom: 0.5em;
+                &--mod {
+                    padding-top: 0;
+                    margin-top: 0;
+                }
             }
-            p:nth-child(2) {
+            &__description {
                 font-family: 'Roboto';
                 font-size: 0.8em;
                 color: #777777;
                 width: 78%;
                 padding-bottom: 1.5em;
                 margin: 0 auto;
+                &--mod {
+                    text-align: center;
+                    padding-bottom: 0;
+                }
             }
-            p:nth-child(3) {
+            &__price {
                 font-family: 'Archivo';
                 color: #BEAD8E;
                 font-size: 1.8em;
                 font-weight: 600;
                 margin-top: 0;
+                &--mod {
+                    display: inline;
+                    font-size: 1em;
+                }
             }
         }
     }
