@@ -46,6 +46,8 @@ body {
     flex-direction: column;
     padding-bottom: 0;
     margin-bottom: 4em; }
+  .header--marginLess {
+    margin-bottom: 0; }
   .header__title {
     margin: 0;
     padding-top: 3em;
@@ -80,6 +82,8 @@ body {
     padding-top: 1em;
     padding-bottom: 0.5em;
     text-align: center; }
+    .header__options--bigger {
+      width: 10em; }
     .header__options p:first-child {
       display: inline;
       color: black;
@@ -136,6 +140,11 @@ body {
     margin-left: 1.5em;
     border: none;
     cursor: pointer; }
+    .dates__button--mod {
+      margin-top: 2em;
+      margin-bottom: 4em;
+      width: 78%;
+      margin-left: 0; }
 
 .aboutUs {
   margin-top: 4em; }
@@ -148,7 +157,7 @@ body {
       padding-left: 1.2em;
       padding-bottom: 1em;
       letter-spacing: 0.175em;
-      font-size: 0.8em;
+      font-size: 0.875em;
       font-weight: 700;
       font-family: 'Archivo';
       color: #777777; }
@@ -158,7 +167,7 @@ body {
         margin-bottom: 0;
         padding-top: 1em; }
       .aboutUs__description__title--mod2 {
-        padding-left: 1em; }
+        padding-left: 0; }
     .aboutUs__description h1 {
       font-family: 'Old Standard TT';
       font-size: 3.5em;
@@ -299,6 +308,25 @@ body {
         .aboutUs__rooms__pricing__description--mod {
           text-align: center;
           padding-bottom: 0; }
+        .aboutUs__rooms__pricing__description--left {
+          text-align: left;
+          font-size: 0.875em;
+          line-height: 1.5em;
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 1.5em;
+          width: 86%; }
+        .aboutUs__rooms__pricing__description--bigger {
+          font-size: 1em;
+          text-align: center; }
+        .aboutUs__rooms__pricing__description--smaller {
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 2em;
+          padding-right: 1em;
+          padding-top: 1em;
+          width: 84%;
+          font-size: 1em; }
       .aboutUs__rooms__pricing__price {
         font-family: 'Archivo';
         color: #BEAD8E;
@@ -308,6 +336,8 @@ body {
         .aboutUs__rooms__pricing__price--mod {
           display: inline;
           font-size: 1em; }
+        .aboutUs__rooms__pricing__price--padding {
+          padding-top: 0.5em; }
 
 .services {
   padding-bottom: 5em; }
@@ -324,6 +354,9 @@ body {
       font-size: 2.5em;
       padding-bottom: 0;
       margin-bottom: 0; }
+    .services__description--paddingLess {
+      width: auto;
+      padding-left: 0; }
   .services svg {
     width: 5em; }
   .services__icons {
@@ -418,6 +451,115 @@ body {
   color: #222222; }
   .roomList__pagination p {
     cursor: pointer; }
+
+.roomDetails {
+  padding-left: 1em; }
+  .roomDetails img {
+    width: 21em; }
+
+.availability {
+  text-align: center;
+  padding-top: 2em; }
+  .availability h2 {
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 1.125em;
+    color: #222222;
+    padding-bottom: 1em; }
+  .availability__check {
+    margin-left: 3em;
+    text-align: left;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 0.875em; }
+    .availability__check input {
+      background: #F2F2F2;
+      border: none;
+      font-family: 'Archivo';
+      font-weight: 400;
+      color: #777777;
+      padding: 1em;
+      width: 80%; }
+
+.amenities {
+  text-align: center; }
+  .amenities h2 {
+    font-family: 'Old Standard TT';
+    font-weight: 400;
+    font-size: 1.875em;
+    padding-left: 1em;
+    text-align: left; }
+  .amenities div p {
+    display: inline; }
+  .amenities__list__1 {
+    display: inline-block;
+    text-align: left;
+    padding-right: 1em;
+    font-family: 'Roboto';
+    font-size: 0.9375em;
+    font-weight: 500;
+    color: #777777; }
+    .amenities__list__1 div {
+      padding-bottom: 0.8em; }
+    .amenities__list__1 svg {
+      padding-right: 0.2em; }
+
+.founder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4em; }
+  .founder img {
+    border-radius: 50%;
+    width: 42%;
+    height: 10em;
+    object-fit: cover; }
+  .founder button {
+    background: #BEAD8E;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    position: relative;
+    bottom: 12em;
+    left: 4.5em;
+    border: 3px solid #ffffff; }
+  .founder__name {
+    font-family: 'Old Standard TT';
+    font-size: 1.875em;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .founder__carreer {
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 0.875em;
+    letter-spacing: 0.175em;
+    color: #BEAD8E;
+    padding-top: 0.2em;
+    margin-top: 0; }
+
+.cancellationTerms {
+  padding-top: 3em;
+  padding-bottom: 3em; }
+  .cancellationTerms h2 {
+    font-family: 'Old Standard TT';
+    font-weight: 400;
+    font-size: 1.875em;
+    padding-left: 1em;
+    text-align: left;
+    margin-bottom: 0; }
+
+.relatedRooms h2 {
+  font-family: 'Old Standard TT';
+  font-weight: 400;
+  font-size: 1.875em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  text-align: left;
+  margin-bottom: 0; }
+.relatedRooms img {
+  width: 21em;
+  height: 15em;
+  display: block; }
 
 .introVideo {
   background: #222222; }
@@ -626,6 +768,8 @@ body {
 
 .footer__head {
   padding-top: 3em; }
+  .footer__head--mod {
+    padding-top: 0; }
   .footer__head__logo {
     display: inline-block;
     color: #ffffff;

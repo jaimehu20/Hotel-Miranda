@@ -1,6 +1,9 @@
 .footer {
     &__head {
         padding-top: 3em;
+        &--mod {
+            padding-top: 0;
+        }
         &__logo {
             display: inline-block;
             color: #ffffff;

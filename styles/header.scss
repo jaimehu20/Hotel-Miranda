@@ -8,6 +8,9 @@
         padding-bottom: 0;
         margin-bottom: 4em;
     }
+    &--marginLess {
+        margin-bottom: 0;
+    }
     &__title {
         margin: 0;
         padding-top: 3em;
@@ -46,6 +49,9 @@
         padding-top: 1em;
         padding-bottom: 0.5em;
         text-align: center;
+        &--bigger {
+            width: 10em;
+        }
         p:first-child {
             display: inline;
             color: black;

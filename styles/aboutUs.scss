@@ -9,7 +9,7 @@
             padding-left: 1.2em;
             padding-bottom: 1em;
             letter-spacing: 0.175em;
-            font-size: 0.8em;
+            font-size: 0.875em;
             font-weight: 700;
             font-family: 'Archivo';
             color: #777777;
@@ -20,7 +20,7 @@
                 padding-top: 1em;
             }
             &--mod2 {
-                padding-left: 1em;
+                padding-left: 0;
             }
         }
         h1 {
@@ -190,6 +190,29 @@
                     text-align: center;
                     padding-bottom: 0;
                 }
+                &--left {
+                    text-align: left;
+                    font-size: 0.875em;
+                    line-height: 1.5em;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-left: 1.5em;
+                    width: 86%;
+                }
+                &--bigger {
+                    font-size: 1em;
+                    text-align: center;
+                }
+                &--smaller {
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-left: 2em;
+                    padding-right: 1em;
+                    padding-top: 1em;
+                    width: 84%;
+                    font-size: 1em;
+
+                }
             }
             &__price {
                 font-family: 'Archivo';
@@ -200,6 +223,9 @@
                 &--mod {
                     display: inline;
                     font-size: 1em;
+                }
+                &--padding {
+                    padding-top: 0.5em;
                 }
             }
         }
