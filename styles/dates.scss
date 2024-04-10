@@ -38,3 +38,25 @@
         }
     }
 }
+@media only screen and (min-width: 1000px) {
+    .dates {
+        display: flex;
+        align-items: center;
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+        justify-content: center;
+        font-weight: 700;
+        &__text {
+            padding-top: 0;
+        }
+        &__selector {
+            padding-right: 10em;
+            &--mod {
+                margin-bottom: 0;
+            }
+        }
+        &__button {
+            margin-left: 5.5em;
+        }
+    }
+}
