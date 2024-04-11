@@ -16,8 +16,81 @@ body {
   color: #ffffff;
   font-family: 'Roboto';
   font-weight: 300;
-  line-height: 1em; }
+  line-height: 1em;
+  display: none; }
 
+.swiper {
+  height: 300px;
+  padding-bottom: 11em !important;
+  max-width: 24em; }
+  .swiper img {
+    width: 100%;
+    height: 16em; }
+
+.swiper--desktop {
+  display: none !important;
+  max-width: 100%;
+  padding-top: 2em !important;
+  padding-bottom: 17em !important; }
+  .swiper--desktop img {
+    width: 100%;
+    height: 50vh;
+    max-height: 350px;
+    object-fit: cover; }
+
+.swiper-button-next, .swiper-button-prev {
+  top: var(--swiper-navigation-top-offset, 32%) !important; }
+
+.swiper-button-prev {
+  color: black !important;
+  height: 15px !important;
+  background: #ffffff;
+  padding: 0.8em;
+  left: auto !important; }
+
+.swiper-button-next {
+  color: white !important;
+  height: 15px !important;
+  background: #BDAC8D;
+  padding: 0.8em;
+  right: 0 !important; }
+
+.swiper-icons {
+  display: flex;
+  gap: 1em;
+  background: #ffffff;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0.5em;
+  transform: translateY(14px); }
+
+:root {
+  --swiper-navigation-size: 15px !important; }
+
+@media only screen and (min-width: 1000px) {
+  .swiper {
+    display: none !important; }
+
+  .swiper-slide div {
+    display: none; }
+
+  .swiper-slide-active {
+    transform: translateY(-36px) !important;
+    left: 0 !important; }
+    .swiper-slide-active div {
+      display: block;
+      width: 90%;
+      max-width: 35em; }
+
+  .swiper--desktop {
+    display: block !important; }
+
+  .swiper-icons {
+    width: 50% !important;
+    max-width: 17em; }
+
+  .slogan {
+    display: block; } }
 .navBar {
   display: flex;
   gap: 2em;
@@ -254,7 +327,8 @@ body {
       font-weight: 100;
       margin-top: 0;
       margin-bottom: 0;
-      padding-left: 0.3em; }
+      padding-left: 0.3em;
+      max-width: 6em; }
     .aboutUs__description p:last-of-type {
       font-family: 'Archivo';
       color: #777777;
@@ -262,7 +336,8 @@ body {
       padding-left: 1.2em;
       padding-bottom: 1.5em;
       width: 81%;
-      line-height: 1.5em; }
+      line-height: 1.5em;
+      max-width: 24em; }
     .aboutUs__description__button {
       background: #BEAD8E;
       color: #ffffff;
@@ -273,6 +348,7 @@ body {
       margin-bottom: 4em;
       margin-left: 1.5em;
       border: none;
+      max-width: 20em;
       cursor: pointer;
       width: 60%; }
       .aboutUs__description__button--mod {
@@ -287,10 +363,11 @@ body {
     text-align: center;
     padding-top: 3em; }
     .aboutUs__team svg:first-of-type {
-      position: absolute;
-      right: 3em; }
+      position: relative;
+      left: 8em; }
     .aboutUs__team svg:last-of-type {
-      position: relative; }
+      position: relative;
+      right: 5em; }
     .aboutUs__team p:first-of-type {
       font-family: 'Old Standard TT';
       font-weight: 500;
@@ -309,6 +386,8 @@ body {
     .aboutUs__team img {
       width: 72%;
       height: 18em; }
+    .aboutUs__team img:last-of-type {
+      display: none; }
     .aboutUs__team__room {
       width: 72%;
       background: #222222;
@@ -341,36 +420,14 @@ body {
       margin-top: 0;
       font-size: 3em;
       text-align: center; }
-    .aboutUs__rooms div:nth-of-type(1) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-      .aboutUs__rooms div:nth-of-type(1) div:nth-child(1) {
-        display: block;
-        background: #ffffff;
-        padding-bottom: 0.5em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        transform: translateY(15px); }
-      .aboutUs__rooms div:nth-of-type(1) div:nth-child(1) svg {
-        padding-right: 0.5em; }
-      .aboutUs__rooms div:nth-of-type(1) div:nth-child(2) img {
-        width: 100%; }
-      .aboutUs__rooms div:nth-of-type(1) div:nth-child(2) svg:first-of-type {
-        position: relative;
-        bottom: 9em;
-        right: 9.6em; }
-      .aboutUs__rooms div:nth-of-type(1) div:nth-child(2) svg:last-of-type {
-        position: relative;
-        bottom: 9em;
-        left: 9.6em; }
     .aboutUs__rooms__pricing {
       width: 80%;
       background: #ffffff;
       text-align: center;
-      transform: translateY(-80px);
+      transform: translateY(-54px);
       margin: 0 auto; }
+      .aboutUs__rooms__pricing--mod {
+        transform: translateY(-20px); }
       .aboutUs__rooms__pricing__title {
         font-family: 'Old Standard TT';
         font-size: 1.5em;
@@ -380,6 +437,8 @@ body {
         .aboutUs__rooms__pricing__title--mod {
           padding-top: 0;
           margin-top: 0; }
+        .aboutUs__rooms__pricing__title--mod2 {
+          padding-top: 0; }
       .aboutUs__rooms__pricing__description {
         font-family: 'Roboto';
         font-size: 0.8em;
@@ -429,6 +488,55 @@ body {
         .aboutUs__rooms__pricing__price--padding {
           padding-top: 0.5em; }
 
+@media only screen and (min-width: 1000px) {
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 6em; }
+    .aboutUs__container {
+      display: flex;
+      flex-direction: row-reverse; }
+    .aboutUs__description {
+      display: block;
+      width: 50%; }
+      .aboutUs__description p:last-of-type {
+        font-size: 0.875em; }
+      .aboutUs__description img {
+        display: none; }
+    .aboutUs__team {
+      display: grid;
+      grid-template-columns: auto auto;
+      margin-right: 1em;
+      width: 50%;
+      max-width: 31em;
+      margin-left: 4em; }
+      .aboutUs__team img:first-of-type {
+        margin-left: 0.5em; }
+      .aboutUs__team img:last-of-type {
+        margin-right: 0.5em;
+        display: block; }
+      .aboutUs__team__strong {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+      .aboutUs__team svg:first-of-type {
+        position: absolute;
+        width: 6em; }
+      .aboutUs__team svg:last-of-type {
+        position: static; }
+      .aboutUs__team p:last-of-type {
+        padding-bottom: 0; }
+      .aboutUs__team img {
+        height: 15em;
+        object-fit: contain;
+        width: auto; }
+      .aboutUs__team__room {
+        width: auto;
+        margin-left: 0.5em;
+        margin-top: 1.5em;
+        padding-bottom: 1.5em; } }
 .services {
   padding-bottom: 5em; }
   .services__description {
