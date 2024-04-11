@@ -1,6 +1,7 @@
 .features {
-    padding-bottom: 6em;
+    padding-bottom: 3em;
     text-align: center;
+    background: #ffffff;
     &--dark {
         background: #222222;
         padding-bottom: 3em;
@@ -38,6 +39,9 @@
         svg {
             padding-left: 2em;
             align-self: end ;
+            width: 6em;
+            height: 8em;
+            padding-top: 5em;
         }
         &__number {
             font-family: 'Archivo';
@@ -101,18 +105,31 @@
             
         }
     }
-    &__buttonsContainer {
-        width: 100%;
-        padding-top: 1.5em;
-        text-align: center;
-        button {
-            width: 1em;
-            height: 1em;
-            border-radius: 50%;
-            background: #EDEDED;
-            border: none;
-            cursor: pointer;
-            margin-right: 0.6em;
+    &__grid {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) { 
+    .features {
+        &__title {
+            margin-top: 0;
+        }
+        &__grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin-left: 3em;
+            margin-right: 3em;
+            max-width: 78em;
+            margin: 0 auto;
+        }
+        &__container {
+            svg {
+                width: 4em;
+            }
+            &__number {
+                font-size: 6em;
+            }
         }
     }
 }
