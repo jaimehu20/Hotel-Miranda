@@ -355,6 +355,8 @@ body {
         margin-left: 3em; }
       .aboutUs__description__button--marginLess {
         margin-left: 0; }
+      .aboutUs__description__button--disabled {
+        display: none; }
     .aboutUs__description img {
       width: 72%;
       height: 18em;
@@ -504,6 +506,9 @@ body {
         font-size: 0.875em; }
       .aboutUs__description img {
         display: none; }
+      .aboutUs__description__button {
+        width: 35%;
+        margin-left: 3.3em; }
     .aboutUs__team {
       display: grid;
       grid-template-columns: auto auto;
@@ -882,12 +887,47 @@ body {
     padding-left: 1.5em;
     padding-right: 4em;
     padding-bottom: 2em; }
-  .introVideo iframe {
+  .introVideo__video {
+    background: #222222; }
+  .introVideo video {
     display: block;
     width: 90%;
     padding-bottom: 2em;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 23em;
+    max-width: 35em;
+    object-fit: cover; }
 
+@media only screen and (min-width: 1000px) {
+  .introVideo {
+    display: flex; }
+    .introVideo p:nth-child(1) {
+      padding-left: 2.8em; }
+    .introVideo p:nth-child(2) {
+      max-width: 7em;
+      font-size: 5em;
+      width: 7em; }
+    .introVideo p:nth-child(3) {
+      max-width: 34em;
+      padding-left: 3.5em;
+      width: 34em;
+      padding-right: 8em; }
+    .introVideo__container {
+      width: 70%; }
+    .introVideo__video {
+      background: #AD9D82; }
+    .introVideo video {
+      padding-top: 6em; } }
+@media only screen and (min-width: 1250px) {
+  .introVideo__container {
+    margin-left: 6em; }
+  .introVideo video {
+    transform: translateX(-113px); } }
+@media only screen and (min-width: 1500px) {
+  .introVideo__container {
+    margin-left: 12em; }
+  .introVideo video {
+    transform: translateX(-260px); } }
 .features {
   padding-bottom: 6em;
   text-align: center;
@@ -985,6 +1025,9 @@ body {
       cursor: pointer;
       margin-right: 0.6em; }
 
+@media only screen and (min-width: 1000px) {
+  .features__title {
+    margin-top: 0; } }
 .menu {
   display: flex;
   flex-direction: column;
