@@ -1,6 +1,10 @@
 .footer {
+    background: #ffffff;
     &__head {
         padding-top: 3em;
+        &--mod {
+            padding-top: 0;
+        }
         &__logo {
             display: inline-block;
             color: #ffffff;
@@ -96,6 +100,14 @@
                 font-size: 0.8em;
                 margin-top: 0;
                 color: #777777;
+            }
+        }
+        &--mod {
+            display: flex;
+            flex-direction: column;
+            gap: 7em;
+            svg {
+                padding-right: 3em;
             }
         }
     }

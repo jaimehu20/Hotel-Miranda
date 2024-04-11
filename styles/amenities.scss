@@ -1,0 +1,38 @@
+.amenities {
+    text-align: center;
+    h2 {
+        font-family: 'Old Standard TT';
+        font-weight: 400;
+        font-size: 1.875em;
+        padding-left: 1em;
+        text-align: left;
+    }
+    div {
+        p {
+            display: inline;
+        }
+    }
+    &__list {
+        &--center {
+            text-align: center;
+        }
+        &__1 {
+            display: inline-block;
+            text-align: left;
+            padding-right: 1em;
+            font-family: 'Roboto';
+            font-size: 0.9375em;
+            font-weight: 500;
+            color: #777777;
+            div {
+                padding-bottom: 0.8em;
+                p {
+                    display: inline-block;
+                }
+            }
+            svg {
+                padding-right: 0.2em;
+            }
+        }
+    }
+}

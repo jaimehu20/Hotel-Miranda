@@ -6,4 +6,123 @@ html {
 body {
     min-width: 320px;
     margin: 0;
+    background: #222222;
 }
+.slogan {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 9em;
+    transform: translateY(15px);
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 1em;
+    display: none;
+}
+
+.swiper {
+    height: 300px;
+    padding-bottom: 11em !important;
+    max-width: 24em;
+    img {
+        width: 100%;
+        height: 16em;
+    }
+  }
+
+.swiper--desktop {
+    display: none !important;
+    max-width: 100%;
+    padding-top: 2em !important;
+    padding-bottom: 17em !important;
+    img {
+        width: 100%;
+        height: 50vh;
+        max-height: 350px;
+        object-fit: cover;
+    }
+  }
+
+.swiper--mobile {
+    height: 320px !important;
+}
+
+  
+.swiper-button-next, .swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, 32%) !important;
+    
+}
+
+.swiper-button-prev {
+    color: black !important;
+    height: 15px !important;
+    background: #ffffff;
+    padding: 0.8em;
+    left: auto !important;
+}
+
+.swiper-button-next {
+    color: white !important;
+    height: 15px !important;
+    background: #BDAC8D;
+    padding: 0.8em;
+    right: 0 !important;
+}
+
+.swiper-icons {
+    display: flex;
+    gap: 1em;
+    background: #ffffff;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0.5em;
+    transform: translateY(14px);
+}
+
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 6px)) !important;
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 6px)) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #BEAD8E !important;
+}
+
+:root {
+    --swiper-navigation-size: 15px !important;
+}
+
+@media only screen and (min-width: 1000px) {
+    .swiper {
+        display: none !important;
+        
+    }
+    .swiper-slide {
+        div {
+            display: none;
+        }
+      }
+
+      .swiper-slide-active {
+        transform: translateY(-36px) !important;
+        left: 0 !important;
+        div {
+            display: block;
+            width: 90%;
+            max-width: 35em;
+        }
+      }
+
+    .swiper--desktop {
+        display: block !important;
+    }
+    .swiper-icons {
+        width: 50% !important;
+        max-width: 17em;
+    }
+    .slogan {
+        display: block;
+    }
+  }
+
+

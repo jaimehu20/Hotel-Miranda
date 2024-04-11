@@ -1,0 +1,23 @@
+.popularRooms {
+    background: #222222;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    &__title {
+        font-family: 'Archivo';
+        font-weight: 500;
+        letter-spacing: 0.175em;
+        color: #BDAC8D;
+    }
+    &__mainTitle {
+        font-family: 'Old Standard TT';
+        font-size: 2.5em;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 1em;
+        color: #ffffff;
+    }
+    img {
+        width: 100%;
+    }
+}

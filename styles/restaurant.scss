@@ -1,0 +1,18 @@
+.restaurant {
+    img {
+        display: block;
+        width: 18em;
+        height: 14em;
+        margin-bottom: 1em;
+        margin: 0 auto;
+    }
+    &__description {
+        font-family: 'Archivo';
+        font-size: 0.875em;
+        color: #777777;
+        text-align: left;
+        padding-left: 3em;
+        width: 19em;
+        line-height: 1.8em;
+    }
+}

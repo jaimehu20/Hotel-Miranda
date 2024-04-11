@@ -1,0 +1,47 @@
+.offerList {
+    padding-bottom: 2em;
+    &__offerContainer {
+        padding-top: 3em;
+        &__items {
+            display: flex;
+            flex-direction: column;
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 20em;
+                height: 11em;
+            }
+            p {
+                display: inline-block;
+            }
+            &__before {
+                font-family: 'Old Standard TT';
+                color: #BEAD8E;
+                font-weight: 700;
+                font-size: 1.4375em;
+                position: relative;
+                bottom: 4em;
+                right: 2em;
+                height: 0.1em;
+                align-self: end;
+            }
+            &__after {
+                font-family: 'Old Standard TT';
+                color: #DE5777;
+                font-weight: 700;
+                font-size: 1.875em;
+                position: relative;
+                bottom: 2.3em;
+                height: 0.1em;
+                right: 1em;
+                align-self: end;
+            }
+            &__smaller {
+                align-self: center;
+                font-size: 0.62em;
+                display: inline;
+            }
+        }
+        
+    }
+}

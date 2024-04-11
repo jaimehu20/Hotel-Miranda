@@ -1,0 +1,27 @@
+.availability {
+    text-align: center;
+    padding-top: 2em;
+    h2 {
+        font-family: 'Archivo';
+        font-weight: 700;
+        font-size: 1.125em;
+        color: #222222;
+        padding-bottom: 1em;
+    }
+    &__check {
+        margin-left: 3em;
+        text-align: left;
+        font-family: 'Archivo';
+        font-weight: 700;
+        font-size: 0.875em;
+        input {
+            background: #F2F2F2;
+            border: none;
+            font-family: 'Archivo';
+            font-weight: 400;
+            color: #777777;
+            padding: 1em;
+            width: 80%;
+        }
+    }
+}

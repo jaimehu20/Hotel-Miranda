@@ -2,6 +2,15 @@
     background: #333333;
     color: #ffffff;
     padding-bottom: 4em;
+    &--mod {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+        margin-bottom: 4em;
+    }
+    &--marginLess {
+        margin-bottom: 0;
+    }
     &__title {
         margin: 0;
         padding-top: 3em;
@@ -18,6 +27,42 @@
             padding-bottom: 0.7em;
             width: 6em;
         }
+        &--mod2 {
+            padding-top: 0.2em;
+        }
+        &--smaller {
+            font-weight: 500;
+            width: 100%;
+            letter-spacing: 0.1em;
+            padding-top: 4em;
+        }
+    }
+    &__options {
+        align-self: flex-end;
+        background: white;
+        width: 7em;
+        margin-right: 1em;
+        font-family: 'Archivo';
+        font-weight: 600;
+        padding-left: 1.6em;
+        padding-right: 1.2em;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+        text-align: center;
+        &--bigger {
+            width: 10em;
+        }
+        p:first-child {
+            display: inline;
+            color: black;
+            cursor: pointer;
+        }
+        p:last-child {
+            display: inline;
+            padding-left: 0.1em;
+            color: #BEAD8E;
+            cursor: pointer;
+        }
     }
     &__button {
         color: #ffffff;
@@ -31,12 +76,38 @@
         padding-bottom: 1.5em;
         padding-right: 5em;
         padding-left: 5em;
+        display: block;
         cursor: pointer;
         &--mod {
             background: #333333;
             border: 2px solid #FFFFFF54;
             margin-top: 1.8em;
         }
-
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .header {
+        margin-top: -1em;
+        padding-left: 11em;
+        padding-top: 4em;
+        &__title {
+            padding-left: 0;
+            width: auto;
+            letter-spacing: 0.175em;
+            font-size: 0.875em;
+            &--mod {
+                font-size: 5.5em;
+                width: 7em;
+                max-width: 7em;
+                padding-bottom: 0;
+                padding-top: 0.3em;
+                letter-spacing: 0;
+            }
+        }
+        &__button {
+            display: inline-block;
+            padding-right: 2em;
+            padding-left: 2em;
+        }
     }
 }
