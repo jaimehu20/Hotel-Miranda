@@ -43,6 +43,10 @@ body {
     }
   }
 
+.swiper--mobile {
+    height: 320px !important;
+}
+
   
 .swiper-button-next, .swiper-button-prev {
     top: var(--swiper-navigation-top-offset, 32%) !important;
@@ -73,6 +77,15 @@ body {
     margin: 0 auto;
     padding: 0.5em;
     transform: translateY(14px);
+}
+
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 6px)) !important;
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 6px)) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #BEAD8E !important;
 }
 
 :root {

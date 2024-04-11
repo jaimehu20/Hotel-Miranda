@@ -38,6 +38,9 @@ body {
     max-height: 350px;
     object-fit: cover; }
 
+.swiper--mobile {
+  height: 320px !important; }
+
 .swiper-button-next, .swiper-button-prev {
   top: var(--swiper-navigation-top-offset, 32%) !important; }
 
@@ -63,6 +66,13 @@ body {
   margin: 0 auto;
   padding: 0.5em;
   transform: translateY(14px); }
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 6px)) !important;
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 6px)) !important; }
+
+.swiper-pagination-bullet-active {
+  background: #BEAD8E !important; }
 
 :root {
   --swiper-navigation-size: 15px !important; }
@@ -929,7 +939,7 @@ body {
   .introVideo video {
     transform: translateX(-260px); } }
 .features {
-  padding-bottom: 6em;
+  padding-bottom: 3em;
   text-align: center;
   background: #ffffff; }
   .features--dark {
@@ -962,7 +972,10 @@ body {
       margin-top: 2em; }
     .features__container svg {
       padding-left: 2em;
-      align-self: end; }
+      align-self: end;
+      width: 6em;
+      height: 8em;
+      padding-top: 5em; }
     .features__container__number {
       font-family: 'Archivo';
       font-weight: 700;
@@ -1012,22 +1025,23 @@ body {
       padding-bottom: 4em;
       padding-right: 9em;
       margin-top: 0; }
-  .features__buttonsContainer {
-    width: 100%;
-    padding-top: 1.5em;
-    text-align: center; }
-    .features__buttonsContainer button {
-      width: 1em;
-      height: 1em;
-      border-radius: 50%;
-      background: #EDEDED;
-      border: none;
-      cursor: pointer;
-      margin-right: 0.6em; }
+  .features__grid {
+    display: none; }
 
 @media only screen and (min-width: 1000px) {
   .features__title {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .features__grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 3em;
+    margin-right: 3em;
+    max-width: 78em;
+    margin: 0 auto; }
+  .features__container svg {
+    width: 4em; }
+  .features__container__number {
+    font-size: 6em; } }
 .menu {
   display: flex;
   flex-direction: column;

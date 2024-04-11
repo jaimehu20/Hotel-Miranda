@@ -65,6 +65,9 @@
             &--marginLess {
                 margin-left: 0;
             }
+            &--disabled {
+                display: none;
+            }
         }
         img {
             width: 72%;
@@ -248,6 +251,10 @@
             }
             img {
                 display: none;
+            }
+            &__button {
+                width: 35%;
+                margin-left: 3.3em;
             }
         }
         &__team {
