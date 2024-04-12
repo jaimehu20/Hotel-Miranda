@@ -389,8 +389,7 @@ body {
     text-align: center;
     padding-top: 3em; }
     .aboutUs__team svg:first-of-type {
-      position: relative;
-      left: 8em; }
+      position: relative; }
     .aboutUs__team svg:last-of-type {
       position: relative;
       right: 5em; }
