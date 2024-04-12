@@ -46,36 +46,7 @@
                 }
         }
     }
-    &__controls {
-        display: flex;
-        justify-content: flex-end;
-        gap: 1em;
-        padding-right: 1em;
-        padding-bottom: 4em;
-    }
-    &__slider {
-        text-align: center;
-        padding-bottom: 2em;
-        img {
-            width: 90%;
-            height: 21em;
-            padding-bottom: 2em;
-        }
-        &__controls {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1em;
-            width: 100%;
-            padding-bottom: 2em;
-            div {
-                width: 1em;
-                height: 1em;
-                border-radius: 50%;
-                background: #EDEDED;
-                border: none;
-                cursor: pointer;
-            }
-        }
+    &__food {
+        margin-bottom: 2em;
     }
 }

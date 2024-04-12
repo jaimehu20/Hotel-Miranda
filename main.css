@@ -41,6 +41,11 @@ body {
 .swiper--mobile {
   height: 320px !important; }
 
+.swiper--food {
+  margin-top: 2em;
+  width: 80%;
+  padding-bottom: 0 !important; }
+
 .swiper-button-next, .swiper-button-prev {
   top: var(--swiper-navigation-top-offset, 32%) !important; }
 
@@ -51,12 +56,21 @@ body {
   padding: 0.8em;
   left: auto !important; }
 
+.swiper-button-prev--slider3 {
+  left: var(--swiper-navigation-sides-offset, 285px) !important;
+  top: var(--swiper-navigation-top-offset, 92%) !important;
+  background: #F8F8F8; }
+
 .swiper-button-next {
   color: white !important;
   height: 15px !important;
   background: #BDAC8D;
   padding: 0.8em;
   right: 0 !important; }
+
+.swiper-button-next--slider3 {
+  right: var(--swiper-navigation-sides-offset, 20px) !important;
+  top: var(--swiper-navigation-top-offset, 92%) !important; }
 
 .swiper-icons {
   display: flex;
@@ -1082,33 +1096,8 @@ body {
       .menu__table div p:nth-child(2) {
         font-family: 'Roboto';
         font-size: 0.8em; }
-  .menu__controls {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1em;
-    padding-right: 1em;
-    padding-bottom: 4em; }
-  .menu__slider {
-    text-align: center;
-    padding-bottom: 2em; }
-    .menu__slider img {
-      width: 90%;
-      height: 21em;
-      padding-bottom: 2em; }
-    .menu__slider__controls {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1em;
-      width: 100%;
-      padding-bottom: 2em; }
-      .menu__slider__controls div {
-        width: 1em;
-        height: 1em;
-        border-radius: 50%;
-        background: #EDEDED;
-        border: none;
-        cursor: pointer; }
+  .menu__food {
+    margin-bottom: 2em; }
 
 .achievements {
   background: #222222;
