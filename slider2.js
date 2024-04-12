@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper--mobile', {
+const swiper2 = new Swiper('.swiper--mobile', {
     // Optional parameters
   
     // If we need pagination

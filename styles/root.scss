@@ -47,6 +47,12 @@ body {
     height: 320px !important;
 }
 
+.swiper--food {
+    margin-top: 2em;
+    width: 80%;
+    padding-bottom: 0 !important;
+}
+
   
 .swiper-button-next, .swiper-button-prev {
     top: var(--swiper-navigation-top-offset, 32%) !important;
@@ -61,12 +67,23 @@ body {
     left: auto !important;
 }
 
+.swiper-button-prev--slider3 {
+    left: var(--swiper-navigation-sides-offset, 285px) !important;
+    top: var(--swiper-navigation-top-offset, 92%) !important;
+    background: #F8F8F8;
+}
+
 .swiper-button-next {
     color: white !important;
     height: 15px !important;
     background: #BDAC8D;
     padding: 0.8em;
     right: 0 !important;
+}
+
+.swiper-button-next--slider3 {
+    right: var(--swiper-navigation-sides-offset, 20px) !important;
+    top: var(--swiper-navigation-top-offset, 92%) !important;
 }
 
 .swiper-icons {
@@ -91,6 +108,7 @@ body {
 :root {
     --swiper-navigation-size: 15px !important;
 }
+
 
 @media only screen and (min-width: 1000px) {
     .swiper {
