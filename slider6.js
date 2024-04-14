@@ -1,4 +1,4 @@
-const swiper4 = new Swiper('.swiper--food', {
+const swiper6 = new Swiper('.swiper--features', {
     // Optional parameters
   
     // If we need pagination
