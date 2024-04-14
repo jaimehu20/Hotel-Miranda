@@ -1,5 +1,11 @@
 .footer {
     background: #ffffff;
+    &__hotel {
+        max-width: 24em;
+    }
+    &__services-section {
+        max-width: 38em;
+    }
     &__head {
         padding-top: 3em;
         &--mod {
@@ -117,5 +123,40 @@
         font-family: 'Roboto';
         font-weight: bold;
         font-size: 0.8em;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 4em;
+        &__hotel {
+            width: 32%;
+        }
+        &__services-section {
+            width: 40%;
+            padding-top: 2.5em;
+        }
+        &__contact-section {
+            width: 25%;
+            padding-top: 4.5em;
+        }
+        &__services {
+            padding-top: 0;
+        }
+        &__serviceList {
+            width: 80%;
+        }
+        &__contact {
+            padding-top: 0;
+        }
+        &__copyright {
+            padding-top: 0.1em;
+            padding-bottom: 0.1em;
+        }
     }
 }

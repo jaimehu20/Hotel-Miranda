@@ -1,5 +1,5 @@
 .achievements {
-    background: #222222;
+    background: #ffffff;
     text-align: center;
     padding-bottom: 1em;
     &__item {
@@ -22,11 +22,20 @@
             padding-bottom: 2em;
         }
     }
+    &__container {
+        background: #222222;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
     .achievements {
         display: flex;
         justify-content: space-around;
+        &__container {
+        display: flex;
+        padding-left: 4%;
+        padding-right: 4%;
+        gap: 3em;
+    }
     }
 }

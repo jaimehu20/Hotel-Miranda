@@ -112,8 +112,22 @@
 
 @media only screen and (min-width: 1000px) { 
     .features {
+        &__mainTitle {
+            font-size: 5em;
+        }
         &__title {
             margin-top: 0;
+            color: #ffffff;
+        }
+        &__subTitle {
+            padding-left: 1em;
+            color: #ffffff;
+        }
+        &__description {
+            margin-top: 0;
+            width: 18em;
+            padding-left: 2.2em;
+            color: #ffffff;
         }
         &__grid {
             display: grid;
@@ -122,8 +136,26 @@
             margin-right: 3em;
             max-width: 78em;
             margin: 0 auto;
+            &--dark {
+                margin: 0 auto;
+                padding-top: 3em;
+                div {
+                    background-color: #292929;
+                    margin-right: 1em;
+                    margin-left: 1em;
+                    margin-bottom: 1em;
+                    max-width: 36em;
+                }
+            }
         }
         &__container {
+            &--dark {
+                height: 5em;
+                svg {
+                    position: relative;
+                    top: 5em;
+                }
+            }
             svg {
                 width: 4em;
             }

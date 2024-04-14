@@ -1,5 +1,16 @@
 .services {
     padding-bottom: 5em;
+    padding-top: 4em;
+    background: #ffffff;
+    video {
+        display: block;
+        width: 90%;
+        padding-bottom: 2em;
+        margin: 0 auto;
+        height: 13em;
+        max-width: 35em;
+        object-fit: cover;
+    }
     &__description {
         font-family: 'Old Standard TT';
         font-size: 2em;
@@ -42,4 +53,42 @@
             transform: translateY(-20px);
         }
     }
+    div:last-of-type {
+        div:nth-child(2) {
+            display: none;   
+    }
+}
+}
+
+@media only screen and (min-width: 1000px) {
+    .services {
+        text-align: center;
+        video {
+            height: 34em;
+            max-width: 57em;
+        }
+        &__description {
+            max-width: 15em;
+            margin: 0 auto;
+            font-size: 4em;
+            &--mod {
+                font-size: 2em;
+                margin-left: 0;
+                width: 11em;
+            }
+        }
+        &__icons {
+            display: inline;
+            div {
+                display: inline-flex;
+                width: 19%;
+                max-width: 22em;
+            }
+        }
+        div:last-of-type {
+            div:nth-child(2) {
+                display: inline-flex;   
+        }
+    }
+}
 }

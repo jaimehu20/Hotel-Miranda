@@ -53,6 +53,15 @@ body {
     padding-bottom: 0 !important;
 }
 
+.swiper--about {
+    padding-bottom: 1em !important;
+}
+
+.swiper--features {
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+}
+
   
 .swiper-button-next, .swiper-button-prev {
     top: var(--swiper-navigation-top-offset, 32%) !important;
@@ -141,6 +150,12 @@ body {
     .slogan {
         display: block;
     }
+    .swiper-button-prev--slider3 {
+        left: var(--swiper-navigation-sides-offset, 630px) !important;
+        top: var(--swiper-navigation-top-offset, 3%) !important;
+    }
+    .swiper-button-next--slider3 {
+        right: var(--swiper-navigation-sides-offset, 20px) !important;
+        top: var(--swiper-navigation-top-offset, 3%) !important;
+    }
   }
-
-
