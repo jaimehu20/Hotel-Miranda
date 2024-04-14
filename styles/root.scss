@@ -53,6 +53,15 @@ body {
     padding-bottom: 0 !important;
 }
 
+.swiper--about {
+    padding-bottom: 1em !important;
+}
+
+.swiper--features {
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+}
+
   
 .swiper-button-next, .swiper-button-prev {
     top: var(--swiper-navigation-top-offset, 32%) !important;

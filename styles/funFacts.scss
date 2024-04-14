@@ -1,4 +1,6 @@
 .funFacts {
+    padding-top: 2em;
+    background: #ffffff;
     h1 {
         font-family: 'Old Standard TT';
         font-weight: 100;
@@ -36,5 +38,22 @@
         margin: 0 auto;
         margin-top: 3em;
 
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .funFacts {
+        h1 {
+            font-size: 5em;
+            width: 8em;
+        }
+        &__data {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__container {
+            gap: 0;
+        }
     }
 }
