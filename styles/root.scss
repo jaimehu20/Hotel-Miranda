@@ -141,6 +141,12 @@ body {
     .slogan {
         display: block;
     }
+    .swiper-button-prev--slider3 {
+        left: var(--swiper-navigation-sides-offset, 630px) !important;
+        top: var(--swiper-navigation-top-offset, 3%) !important;
+    }
+    .swiper-button-next--slider3 {
+        right: var(--swiper-navigation-sides-offset, 20px) !important;
+        top: var(--swiper-navigation-top-offset, 3%) !important;
+    }
   }
-
-

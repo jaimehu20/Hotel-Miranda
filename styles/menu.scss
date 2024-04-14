@@ -4,6 +4,7 @@
     background: #ffffff;
     svg {
         align-self: flex-end;
+        width: 6em;
     }
     &__title {
         font-family: 'Archivo';
@@ -25,13 +26,20 @@
     &__table {
         display: grid;
         grid-template-columns: auto auto;
-        div {
+        &--2 {
+            display: none;
+        }
+        &--3 {
+            display: none;
+        }
+        &__item {
             padding-right: 2em;
             padding-bottom: 1em;
             img {
                 width: 8em;
                 height: 8em;
                 padding-left: 1em;
+                object-fit: cover;
                 }
                 p:nth-child(1) {
                     font-family: 'Old Standard TT';
@@ -48,5 +56,37 @@
     }
     &__food {
         margin-bottom: 2em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .swiper--menu {
+        display: block !important;
+        width: 384px;
+        height: 432px;
+        padding-right: 22em !important;
+        padding-top: 3em !important;
+    }
+    .menu {
+        svg {
+            align-self: flex-start;
+            width: 10em;
+            padding-left: 3em;
+        }
+        &__table {
+            display: flex !important;
+            padding-top: 3em;
+            &--2 {
+                display: block;
+            }
+            &--3 {
+                display: block;
+            }
+            &__item {
+                p:nth-child(1) {
+                    width: 7em;
+                }
+            }
+        }
     }
 }
