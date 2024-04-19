@@ -1,4 +1,6 @@
 .roomList {
+    background: #ffffff;
+    padding-top: 2em;
     &__container {
         display: flex;
         flex-direction: column;
@@ -45,5 +47,12 @@
         p {
             cursor: pointer;
         }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .roomList{
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
 }

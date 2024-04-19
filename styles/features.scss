@@ -121,13 +121,17 @@
         }
         &__subTitle {
             padding-left: 1em;
-            color: #ffffff;
+            &--light {
+                color: #ffffff;
+            }
         }
         &__description {
             margin-top: 0;
             width: 18em;
             padding-left: 2.2em;
-            color: #ffffff;
+            &--light {
+                color: #ffffff;
+            }
         }
         &__grid {
             display: grid;
