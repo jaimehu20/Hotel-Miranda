@@ -95,7 +95,6 @@
             <h1>Hand Picked Rooms</h1>
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    @foreach ($rooms as $room)
                         <div class="swiper-slide">
                             <div class="swiper-icons">
                                 <img src="./src/icons/bedIcon.png"/>
@@ -108,12 +107,45 @@
                             </div>
                             <img src="./src/images/room1.jpg"/>
                             <div class="aboutUs-rooms-pricing">
-                                <p>{{$room['room_type']}}</p>
+                                <p>Single Bed</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                <p>{{$room['room_rate']}}/Night</p>
+                                <p>$70/Night</p>
                             </div>
                         </div>
-                    @endforeach
+                        <div class="swiper-slide">
+                            <div class="swiper-icons">
+                                <img src="./src/icons/bedIcon.png"/>
+                                <img src="./src/icons/wifIcon.png"/>
+                                <img src="./src/icons/carIcon.png"/>  
+                                <img src="./src/icons/flake.png"/>    
+                                <img src="./src/icons/gym.png"/>    
+                                <img src="./src/icons/nosmoke.png"/>    
+                                <img src="./src/icons/cocktail.png"/>  
+                            </div>
+                            <img src="./src/images/room2.jpg"/>
+                            <div class="aboutUs-rooms-pricing">
+                                <p>Double Bed</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <p>$140/Night</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-icons">
+                                <img src="./src/icons/bedIcon.png"/>
+                                <img src="./src/icons/wifIcon.png"/>
+                                <img src="./src/icons/carIcon.png"/>  
+                                <img src="./src/icons/flake.png"/>    
+                                <img src="./src/icons/gym.png"/>    
+                                <img src="./src/icons/nosmoke.png"/>    
+                                <img src="./src/icons/cocktail.png"/>  
+                            </div>
+                            <img src="./src/images/room3.jpg"/>
+                            <div class="aboutUs-rooms-pricing">
+                                <p>Double Bed Superior</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <p>$180/Night</p>
+                            </div>
+                        </div>
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -257,44 +289,12 @@
                 <div class="swiper-slide">
                     <div class="menu-table">
                         <div class="menu-table-item">
-                            <img src="./src/images/bacon.png"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Eggs & Bacon</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="menu-table-item">
-                            <img src="./src/images/tea.png"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Tea Or Coffee</p>
-                            <p >Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="menu-table-item">
-                            <img src="./src/images/chia.jpg"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Chia Oatmeal</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </div>
-                    <div class="menu-table menu-table--2">
-                        <div class="menu-table-item">
-                            <img src="./src/images/chia.jpg"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Chia Oatmeal</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="menu-table-item">
                             <img src="./src/images/fruit.jpg"/>
                         </div>
                         <div class="menu-table-item">
                             <p>Fruit Parfait</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                    </div>
-                    <div class="menu-table menu-table--3">
                         <div class="menu-table-item">
                             <img src="./src/images/marmalade.jpg"/>
                         </div>
@@ -309,7 +309,7 @@
                             <p>Cheese Plate</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                    </div>
+                    </div>  
                 </div>
                 <div class="swiper-slide">
                     <div class="menu-table">
@@ -334,44 +334,83 @@
                             <p>Cheese Plate</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                    </div>    
-                    <div class="menu-table menu-table--2">
-                        <div class="menu-table-item">
-                            <img src="./src/images/chia.jpg"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Chia Oatmeal</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="menu-table-item">
-                            <img src="./src/images/fruit.jpg"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Fruit Parfait</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
                     </div>
-                    <div class="menu-table menu-table--3">
-                        <div class="menu-table-item">
-                            <img src="./src/images/marmalade.jpg"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Marmalade Selection</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="menu-table-item">
-                            <img src="./src/images/cheese.jpg"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Cheese Plate</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </div>     
                 </div>
             </div>
             <div class="swiper-button-prev swiper-button-prev--menu"></div>
             <div class="swiper-button-next swiper-button-next--menu"></div>
         </div>
+        <ul class="menu-list">
+            <li>
+                <div class="menu-table-item">
+                    <img src="./src/images/fruit.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Fruit Parfait</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="menu-table-item">
+                    <img src="./src/images/marmalade.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Marmalade Selection</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="menu-table-item">
+                    <img src="./src/images/cheese.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Cheese Plate</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+            </li>
+            <li>
+                <div class="menu-table-item">
+                    <img src="./src/images/bacon.png"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Bacon & Eggs</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="menu-table-item">
+                    <img src="./src/images/chia.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Chia</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="menu-table-item">
+                    <img src="./src/images/tea.png"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Tea</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+            </li>
+            <li>
+                <div class="menu-table-item">
+                    <img src="./src/images/fruit.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Fruit Parfait</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="menu-table-item">
+                    <img src="./src/images/marmalade.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Marmalade Selection</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="menu-table-item">
+                    <img src="./src/images/cheese.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Cheese Plate</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+            </li>
+        </ul>
         <div class="menu-food">
             <div class="swiper swiper--food">
                 <div class="swiper-wrapper">

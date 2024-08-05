@@ -33,6 +33,8 @@ const featureSwiper = new Swiper('.swiper--mobile', {
 
 const menuSwiper = new Swiper('.swiper--menu', {
   // Navigation arrows
+  loop: true,
+  slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

@@ -132,7 +132,7 @@
     height: auto;
     max-width: none;
     img {
-      width: auto;
+      width: 1024px;
       height: auto;
     }
   }
@@ -145,16 +145,18 @@
   .swiper-button-next, .swiper-button-prev {
     top: var(--swiper-navigation-top-offset, 38%) !important; }
   .swiper-button-prev {
-    left: 456px !important;
+    left: auto !important;
+    background: #a3a2a2;
   }
-  .swiper-button-next {
-    right: 456px !important;
+  .swiper-slide {
+    height: 727px !important;
   }
   .swiper-slide-active {
     left: 0 !important; }
     .swiper-slide-active div {
       max-width: 22em;
-      display: block !important;}
+      display: block !important;
+      padding-top: 15px;}
   .swiper--funfacts {
     display: none !important;}
   .slogan {
@@ -168,22 +170,17 @@
 
 @media only screen and (min-width: 1000px) {
     .swiper--menu {
-        display: block !important;
-        height: 432px;
-        padding-right: 22em !important;
-        padding-top: 3em !important;
-        max-width: 24em; }
-      
+        display: none !important; }
     .menu svg {
         align-self: flex-start;
         width: 10em;
-        padding-left: 3em; }
-    .menu__table {
-        display: flex !important;
-        padding-top: 3em; }
-        .menu__table--2 {
-            display: block; }
-        .menu__table--3 {
-            display: block; }
-        .menu__table__item p:nth-child(1) {
-            width: 10em; } }
+        padding-left: 3em; } }
+
+@media only screen and (min-width: 1500px) {
+  .swiper-button-prev {
+    right: 88% !important;
+  }
+  .swiper-button-next {
+    left: 88% !important;
+  }
+}

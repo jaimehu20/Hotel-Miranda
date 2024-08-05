@@ -284,12 +284,10 @@ a {
       margin-right: 9em; }
     p:nth-child(1){
       all: initial;
-      display: inline;
-      color: black;
+      color: white;
       cursor: pointer;
     }
     p:nth-child(2){
-      display: inline;
       padding-left: 0.1em;
       color: #BEAD8E;
       cursor: pointer;
@@ -342,7 +340,7 @@ a {
     display: flex;
     align-items: center;
     padding-top: 1.8em;
-    padding-bottom: 2.5em;
+    padding-bottom: 1em;
     justify-content: center;
     font-weight: 700;
     form {
@@ -511,7 +509,8 @@ a {
         font-size: 1.5em;
         margin-bottom: 0;
         padding-top: 0.8em;
-        padding-bottom: 0.5em; }
+        padding-bottom: 0.5em;
+        color: black; }
         .aboutUs__rooms__pricing__title--mod {
           padding-top: 0;
           margin-top: 0; }
@@ -1613,6 +1612,7 @@ a {
       margin: 0 !important; }
     .introVideo-container {
       width: 70%;
+      padding-top: 50px;
       button {
         margin-left: 3.5em;
       } }
@@ -1720,6 +1720,9 @@ a {
     display: none; }
 
 @media only screen and (min-width: 1000px) {
+  .features {
+    padding-top: 50px;
+  }
   .features p:nth-child(2) {
     font-size: 5em; }
   .features p:first-child{
@@ -1816,12 +1819,24 @@ a {
         font-size: 1.5em;
         margin-top: 0;
         margin-bottom: 0;
-        padding-top: 0.4em; }
+        padding-top: 0.4em;
+        color: black; }
       .menu-table-item p:nth-child(2) {
         font-family: 'Roboto';
         font-size: 0.8em;
         width: auto !important;
         color: black !important; }
+        .menu-table2 {
+          display: none;
+        }
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .menu-list li {
+    display: flex;
+  }
   .menu-food {
     margin-bottom: 2em;
     text-align: center; }
@@ -1835,6 +1850,16 @@ a {
   }
   .menu-food {
     display: none;
+  }
+  .menu-table {
+    max-width: none !important;
+    padding-top: 0 !important;
+  }
+  .menu-list {
+    display: flex;
+    max-width: 1111px;
+    margin: 0 auto;
+    padding-bottom: 80px;
   }
 }
 .achievements {
