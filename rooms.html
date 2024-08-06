@@ -11,15 +11,13 @@
     <title>Rooms</title>
 </head>
 <body>
-    <p class="slogan">
-        We Make Your Feel Comfortable
-    </p>
+    <p class="slogan">We Make Your Feel Comfortable</p>
     <nav class="navBar">
          <svg class="navBar-burguer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path>
         </svg>
         <div class="navBar-logo">
-            <a class="logoLink" href="/index.php">
+            <a class="logoLink" href="/index.html">
                 <div>
                     <p>H</p>
                 </div>
@@ -30,10 +28,10 @@
             </a>
         </div>
         <div class="navBar-menu">
-            <p><a href="./about.php">About Us</a></p>
-            <p><a href="./rooms.php">Rooms</a></p>
-            <p><a href="./offers.php">Offers</a></p>
-            <p><a href="./contact.php">Contact</a></p>
+            <p><a href="./about.html">About Us</a></p>
+            <p><a href="./rooms.html">Rooms</a></p>
+            <p><a href="./offers.html">Offers</a></p>
+            <p><a href="./form.html">Contact</a></p>
         </div>
         <div class="navBar-icons">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,33 +53,173 @@
         <p>THE ULTIMATE LUXURY</p>
         <p>Ultimate Room</p>
         <div class="header-options">
-            <p>Home |</p>
-            <p>Rooms</p>
+            <p><a href="./index.html">Home</a> |</p>
+            <p><a href="./rooms.html">Rooms</a></p>
         </div>
     </header>
     <section class="roomList">
-        @foreach ($rooms as $room)
-            <div class="roomList-container">
-                <a href="roomDetails.php?room={{ $room['_id'] }}">
-                    <img src="./src/images/room3.jpg"/>
-                </a>
+        <div class="roomList-container">
+                    <img src="./src/images/room1.jpg"/>
                 <div class="roomList-icons">
-                    <img src="../src/icons/bedIcon.png"/>
-                    <img src="../src/icons/wifIcon.png"/>
-                    <img src="../src/icons/carIcon.png"/>  
-                    <img src="../src/icons/flake.png"/>    
-                    <img src="../src/icons/gym.png"/>    
-                    <img src="../src/icons/nosmoke.png"/>    
-                    <img src="../src/icons/cocktail.png"/>  
+                    <img src="./src/icons/bedIcon.png"/>
+                    <img src="./src/icons/wifIcon.png"/>
+                    <img src="./src/icons/carIcon.png"/>  
+                    <img src="./src/icons/flake.png"/>    
+                    <img src="./src/icons/gym.png"/>    
+                    <img src="./src/icons/nosmoke.png"/>    
+                    <img src="./src/icons/cocktail.png"/>  
                 </div>
-                <p>{{$room['room_type']}}</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                <p>Single Bed</p>
+                <p class="room-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
                 <div class="roomList-bookNow roomList-bookNow--rooms">
-                    <p>${{$room['room_rate']}}/Night</p>
+                    <p>$70/Night</p>
                     <p>Booking Now</p>
                 </div>   
+        </div>
+        <div class="roomList-container">
+                <img src="./src/images/room1.jpg"/>
+            <div class="roomList-icons">
+                <img src="./src/icons/bedIcon.png"/>
+                <img src="./src/icons/wifIcon.png"/>
+                <img src="./src/icons/carIcon.png"/>  
+                <img src="./src/icons/flake.png"/>    
+                <img src="./src/icons/gym.png"/>    
+                <img src="./src/icons/nosmoke.png"/>    
+                <img src="./src/icons/cocktail.png"/>  
             </div>
-        @endforeach
+            <p>Single Bed</p>
+            <p class="room-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+            <div class="roomList-bookNow roomList-bookNow--rooms">
+                <p>$70/Night</p>
+                <p>Booking Now</p>
+            </div>   
+        </div>
+        <div class="roomList-container">
+            <img src="./src/images/room1.jpg"/>
+            <div class="roomList-icons">
+                <img src="./src/icons/bedIcon.png"/>
+                <img src="./src/icons/wifIcon.png"/>
+                <img src="./src/icons/carIcon.png"/>  
+                <img src="./src/icons/flake.png"/>    
+                <img src="./src/icons/gym.png"/>    
+                <img src="./src/icons/nosmoke.png"/>    
+                <img src="./src/icons/cocktail.png"/>  
+            </div>
+            <p>Single Bed</p>
+            <p class="room-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+            <div class="roomList-bookNow roomList-bookNow--rooms">
+                <p>$70/Night</p>
+                <p>Booking Now</p>
+        </div>   
+        </div>
+        <div class="roomList-container">
+        <img src="./src/images/room1.jpg"/>
+        <div class="roomList-icons">
+            <img src="./src/icons/bedIcon.png"/>
+            <img src="./src/icons/wifIcon.png"/>
+            <img src="./src/icons/carIcon.png"/>  
+            <img src="./src/icons/flake.png"/>    
+            <img src="./src/icons/gym.png"/>    
+            <img src="./src/icons/nosmoke.png"/>    
+            <img src="./src/icons/cocktail.png"/>  
+        </div>
+        <p>Single Bed</p>
+        <p class="room-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+        <div class="roomList-bookNow roomList-bookNow--rooms">
+            <p>$70/Night</p>
+            <p>Booking Now</p>
+        </div>   
+        </div>
+        <div class="roomList-container">
+        <img src="./src/images/room1.jpg"/>
+        <div class="roomList-icons">
+            <img src="./src/icons/bedIcon.png"/>
+            <img src="./src/icons/wifIcon.png"/>
+            <img src="./src/icons/carIcon.png"/>  
+            <img src="./src/icons/flake.png"/>    
+            <img src="./src/icons/gym.png"/>    
+            <img src="./src/icons/nosmoke.png"/>    
+            <img src="./src/icons/cocktail.png"/>  
+        </div>
+        <p>Single Bed</p>
+        <p class="room-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+        <div class="roomList-bookNow roomList-bookNow--rooms">
+            <p>$70/Night</p>
+            <p>Booking Now</p>
+        </div>   
+        </div>
+        <div class="roomList-container">
+    <img src="./src/images/room1.jpg"/>
+<div class="roomList-icons">
+    <img src="./src/icons/bedIcon.png"/>
+    <img src="./src/icons/wifIcon.png"/>
+    <img src="./src/icons/carIcon.png"/>  
+    <img src="./src/icons/flake.png"/>    
+    <img src="./src/icons/gym.png"/>    
+    <img src="./src/icons/nosmoke.png"/>    
+    <img src="./src/icons/cocktail.png"/>  
+</div>
+<p>Single Bed</p>
+<p class="room-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+<div class="roomList-bookNow roomList-bookNow--rooms">
+    <p>$70/Night</p>
+    <p>Booking Now</p>
+</div>   
+        </div>
+        <div class="roomList-container">
+    <img src="./src/images/room1.jpg"/>
+<div class="roomList-icons">
+    <img src="./src/icons/bedIcon.png"/>
+    <img src="./src/icons/wifIcon.png"/>
+    <img src="./src/icons/carIcon.png"/>  
+    <img src="./src/icons/flake.png"/>    
+    <img src="./src/icons/gym.png"/>    
+    <img src="./src/icons/nosmoke.png"/>    
+    <img src="./src/icons/cocktail.png"/>  
+</div>
+<p>Single Bed</p>
+<p class="room-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+<div class="roomList-bookNow roomList-bookNow--rooms">
+    <p>$70/Night</p>
+    <p>Booking Now</p>
+</div>   
+        </div>
+        <div class="roomList-container">
+            <img src="./src/images/room1.jpg"/>
+        <div class="roomList-icons">
+            <img src="./src/icons/bedIcon.png"/>
+            <img src="./src/icons/wifIcon.png"/>
+            <img src="./src/icons/carIcon.png"/>  
+            <img src="./src/icons/flake.png"/>    
+            <img src="./src/icons/gym.png"/>    
+            <img src="./src/icons/nosmoke.png"/>    
+            <img src="./src/icons/cocktail.png"/>  
+        </div>
+        <p>Single Bed</p>
+        <p class="room-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+        <div class="roomList-bookNow roomList-bookNow--rooms">
+            <p>$70/Night</p>
+            <p>Booking Now</p>
+        </div>   
+        </div>
+        <div class="roomList-container">
+            <img src="./src/images/room1.jpg"/>
+        <div class="roomList-icons">
+            <img src="./src/icons/bedIcon.png"/>
+            <img src="./src/icons/wifIcon.png"/>
+            <img src="./src/icons/carIcon.png"/>  
+            <img src="./src/icons/flake.png"/>    
+            <img src="./src/icons/gym.png"/>    
+            <img src="./src/icons/nosmoke.png"/>    
+            <img src="./src/icons/cocktail.png"/>  
+        </div>
+        <p>Single Bed</p>
+        <p class="room-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+        <div class="roomList-bookNow roomList-bookNow--rooms">
+            <p>$70/Night</p>
+            <p>Booking Now</p>
+        </div>   
+        </div> 
         <div class="roomList-pagination">
                 <p><<</p>
                 <p>1</p>
@@ -175,21 +313,21 @@
             <p class="footer-contact">Contact Us.</p>
             <div class="footer-contactData">
                 <div>
-                    <img src="../src/icons/phone.png"/>
+                    <img src="./src/icons/phone.png"/>
                     <div>
                         <p>Phone Number</p>
                         <p>+987 876 765 76 577</p>
                     </div>
                 </div>
                 <div>
-                    <img src="../src/icons/message.png"/>
+                    <img src="./src/icons/message.png"/>
                     <div>
                         <p>Fax</p>
                         <p>+987 876 765 76 577</p>
                     </div>
                 </div>
                 <div>
-                    <img src="../src/icons/map.png"/>
+                    <img src="./src/icons/map.png"/>
                     <div>
                         <p>Location</p>
                         <p>123 Ocean View, Coral Bay</p>
