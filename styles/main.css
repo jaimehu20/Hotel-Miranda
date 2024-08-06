@@ -264,6 +264,9 @@ a {
   .header {
     padding-left: 11em;
     padding-top: 4em; }
+  .aboutHeader {
+    padding-left: 8em;
+  }
     .header-title {
       padding-left: 0 !important;
       width: auto !important;
@@ -775,11 +778,12 @@ a {
   .restaurant {
     display: flex;
     gap: 2.5em;
-    padding-bottom: 3em; }
+    padding-bottom: 3em;
+    justify-content: center; }
     .restaurant img {
       width: 50%;
       height: 25em;
-      margin-left: 3em;
+      margin: 0;
       max-width: 70em; }
     .restaurant__container {
       width: 40%; }
@@ -862,10 +866,12 @@ a {
   
 
 @media only screen and (min-width: 1000px) {
+  .funFacts {
+    padding-bottom: 8em; }
   .funFacts h1 {
     font-size: 5em;
     width: 8em; }
-  .funFacts__data {
+  .funFacts-data {
     display: flex;
     justify-content: space-around;
     align-items: center; }
@@ -1743,7 +1749,11 @@ a {
     max-width: 78em;
     margin: 0 auto; }
   .features-grid div {
-    img {
+    justify-content: space-evenly;
+    background: #292929;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    svg {
       width: 4em;
       height: 6em; }
     h1 {
