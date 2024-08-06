@@ -66,7 +66,8 @@ a {
       .navBar-logo div:last-child p {
         line-height: 0;
         font-size: 0.8em;
-        font-family: 'Archivo' !important; }
+        font-family: 'Archivo' !important;
+        color: black; }
       .navBar-logo div:last-child p:last-child {
         all: initial;
         font-weight: bold; }
@@ -1024,10 +1025,14 @@ a {
 /* ROOM DETAILS */
 .roomDetails {
   padding-left: 1em;
-  background: #ffffff; }
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .roomDetails img {
     width: 21em; }
   .roomDetails p:nth-child(1) {
+    align-self: baseline;
     padding-bottom: 1em;
     letter-spacing: 0.175em;
     font-size: 0.875em;
@@ -1040,6 +1045,7 @@ a {
     text-align: left;
     padding-left: 1em; }
   .roomDetails p:nth-child(2) {
+    align-self: baseline;
     font-family: 'Old Standard TT';
     font-size: 2.5em;
     padding-bottom: 0;
@@ -1049,13 +1055,15 @@ a {
     width: auto;
     padding-left: 0; }
   .roomDetails p:nth-child(3) {
+    align-self: baseline;
     font-family: 'Archivo';
     color: #BEAD8E;
     font-size: 1.8em;
     font-weight: 600;
     margin-top: 0;
     padding-top: 0.5em;
-    width: auto; }
+    width: auto;
+    margin: 0; }
 
 .availability {
   text-align: center;
@@ -1082,7 +1090,8 @@ a {
     flex-direction: column;
     font-family: 'Archivo';
     width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 42em; }
   .availability label {
     text-align: left;
     padding-bottom: 10px; }
@@ -1147,7 +1156,8 @@ a {
     border-radius: 50%;
     width: 42%;
     height: 10em;
-    object-fit: cover; }
+    object-fit: cover;
+    max-width: 10em; }
   .founder button {
     background: #BEAD8E;
     width: 3em;
@@ -1207,6 +1217,14 @@ a {
   background: #ffffff;
   padding-top: 1px;
 }
+.relatedRoomList-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+  justify-content: center; }
+.relatedRooms-description {
+  max-width: 18em; }
 .relatedRooms h2 {
   font-family: 'Old Standard TT';
   font-weight: 400;
@@ -1357,6 +1375,56 @@ a {
     width: auto; }
   .popularRooms img {
     width: 100%; }
+
+@media only screen and (min-width: 1000px) {
+  .roomDetails {
+    padding: 0px 65px; }
+  .roomDetails p:nth-child(2) {
+    color: black;
+    align-self: center; }
+  .roomDetails p:nth-child(3) {
+    align-self: center; }
+  .roomDetails img {
+    width: 42em;
+    object-fit: cover; }
+  .amenities {
+    padding-bottom: 140px;
+  }
+  .amenities h2 {
+    text-align: center; }
+  .amenities-content {
+    display: flex;
+    justify-content: space-evenly; }
+  .founder img {
+    width: 33%;
+    height: 19em;
+    max-width: 19em; }
+  .founder button {
+    bottom: 23em;
+    left: 5.5em;
+  }
+  .cancellationTerms h2 {
+    text-align: center; }
+  .cancellationTerms p {
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 44em;
+    text-align: center; }
+  .relatedRooms {
+    text-align: center; }
+  .relatedRoomList-container {
+    display: inline-flex;
+    margin: 50px; }
+  .relatedRooms h2 {
+    text-align: center; }
+}
+
+@media only screen and (min-width: 1600px) {
+  .roomDetails img {
+    width: 50em;
+  }
+}
 
 @media only screen and (min-width: 1000px) {
   .offerList__offerContainer__items img {
@@ -1771,7 +1839,6 @@ a {
     margin: 0 auto; }
   .features-grid div {
     justify-content: space-evenly;
-    background: #292929;
     margin-bottom: 30px;
     margin-left: 30px;
     svg {
@@ -1789,12 +1856,8 @@ a {
     .features__grid--dark {
       margin: 0 auto;
       padding-top: 3em; }
-      .features__grid--dark div {
-        background-color: #292929;
-        margin-right: 1em;
-        margin-left: 1em;
-        margin-bottom: 1em;
-        max-width: 36em; }
+      .features-grid--dark div {
+        background-color: #292929; }
   .features__container--dark {
     height: 5em; }
     .features__container--dark svg {
