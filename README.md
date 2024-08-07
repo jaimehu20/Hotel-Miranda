@@ -1,5 +1,6 @@
 # ¡Hotel Miranda!
-🏨Hotel Miranda es un proyecto basado en la web de un hotel ficticio para reforzar y mejorar mis conocimientos en HTML y CSS.
+🏨 Hotel Miranda es un proyecto basado en la web de un hotel ficticio para reforzar y mejorar mis conocimientos en HTML y CSS.
+
 ![827shots_so](https://github.com/user-attachments/assets/6d1b93ba-0f42-4972-9044-db6e961c2bb2)
 
 Las tecnologías utilizadas son: 
